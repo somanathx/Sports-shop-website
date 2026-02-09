@@ -1,0 +1,51 @@
+# ===============================
+# Virtual Environment
+# ===============================
+env/
+venv/
+ENV/
+.venv/
+
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ===============================
+# Django
+# ===============================
+db.sqlite3
+*.log
+media/
+staticfiles/
+
+# Keep migrations, ignore cache only
+**/migrations/__pycache__/
+
+# ===============================
+# Environment Variables
+# ===============================
+.env
+.env.*
+
+# ===============================
+# Windows OS files
+# ===============================
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===============================
+# IDE / Editor
+# ===============================
+.vscode/
+.idea/
+
+# ===============================
+# Build / Misc
+# ===============================
+*.class
+*.jar
+.DS_Store
