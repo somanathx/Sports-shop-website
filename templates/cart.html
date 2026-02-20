@@ -4,5 +4,11 @@
 {% endblock banner %}
 
 {% block content %}
-    {% include 'cart_container.html' %}
+    {% if messages  %}
+        {% for message in messages %}     
+        <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %} 
+    {% else %}
+        {% include 'cart_container.html' %}
+    {% endif %}    
 {% endblock content %}
